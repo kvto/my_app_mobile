@@ -1,18 +1,37 @@
 import React from 'react'
-import { View, Text, StyleSheet} from 'react-native'
+import { View, StyleSheet} from 'react-native'
+import StyledText from './StyledText.jsx'
 
+const RepositoryStats = props =>{
+    return (
+        <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+        <View>
+            <StyledText textAlignCenter='center' fontWeight='bold'>Stars</StyledText>
+            <StyledText align='center'>{props.stargazersCount}</StyledText>
+        </View>
+        <View>
+            <StyledText textAlignCenter='center' fontWeight='bold'>Forks</StyledText>
+            <StyledText align='center'>{props.forksCount}</StyledText>
+        </View>
+        <View>
+            <StyledText textAlignCenter='center' fontWeight='bold'>Reviews</StyledText>
+            <StyledText align='center'>{props.reviewCount}</StyledText>
+        </View>
+        <View>
+            <StyledText align='center' fontWeight='bold'>Rating</StyledText>
+            <StyledText align='center'>{props.ratingAverage}</StyledText>
+        </View>            
+        </View>
+    )
+}
 
 const RepositoryItem = (props) => (
     <View key={props.id} style={styles.container}>
-                    <Text style={styles.strong}>id: {props.id}</Text>
-                    <Text>fullName: {props.fullName}</Text>
-                    <Text>description: {props.description}</Text>
-                    <Text>language: {props.language}</Text>
-                    <Text>stars: {props.stargazersCount}</Text>
-                    <Text>forks: {props.forksCount}</Text>
-                    <Text>reviews: {props.reviewCount}</Text>
-                    <Text>rating: {props.ratingAverage}</Text>
-                </View>
+                    <StyledText fontSize='subheading' fontWeight='bold'>{props.fullName}</StyledText>
+                    <StyledText bold >description: {props.description}</StyledText>
+                    <StyledText blue>language: {props.language}</StyledText>
+                    <RepositoryStats {...props} />
+     </View>
 )
 
 const styles = StyleSheet.create({
