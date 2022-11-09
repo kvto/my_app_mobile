@@ -1,49 +1,48 @@
 import React from 'react'
-import { View, StyleSheet} from 'react-native'
+import { Image, View, StyleSheet} from 'react-native'
+import theme from '../theme.js'
+import RepositoryStats from './RepositoryStats.jsx'
 import StyledText from './StyledText.jsx'
 
-const RepositoryStats = props =>{
-    return (
-        <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-        <View>
-            <StyledText textAlignCenter='center' fontWeight='bold'>Stars</StyledText>
-            <StyledText align='center'>{props.stargazersCount}</StyledText>
+const RepositoryItemHeader = ({ownerAvatarUrl, fullName, description, language}) =>(
+    <View style={{flexDirection:'row', paddingBottom: 2}}>
+        <View style={{paddingRight: 10}}>
+    <Image style={styles.image} source={{ uri: ownerAvatarUrl}}/>        
         </View>
-        <View>
-            <StyledText textAlignCenter='center' fontWeight='bold'>Forks</StyledText>
-            <StyledText align='center'>{props.forksCount}</StyledText>
-        </View>
-        <View>
-            <StyledText textAlignCenter='center' fontWeight='bold'>Reviews</StyledText>
-            <StyledText align='center'>{props.reviewCount}</StyledText>
-        </View>
-        <View>
-            <StyledText align='center' fontWeight='bold'>Rating</StyledText>
-            <StyledText align='center'>{props.ratingAverage}</StyledText>
-        </View>            
-        </View>
-    )
-}
+    <View style={{ flex:1}}>
+     <StyledText fontWeight='bold'>{fullName}</StyledText>
+    <StyledText color='secondary' >{description}</StyledText>
+    <StyledText style={styles.language}>{language}</StyledText>   
+    </View>
+    </View>
+    
+)
 
 const RepositoryItem = (props) => (
     <View key={props.id} style={styles.container}>
-                    <StyledText fontSize='subheading' fontWeight='bold'>{props.fullName}</StyledText>
-                    <StyledText bold >description: {props.description}</StyledText>
-                    <StyledText blue>language: {props.language}</StyledText>
-                    <RepositoryStats {...props} />
+        <RepositoryItemHeader {...props} />
+    <RepositoryStats {...props} />
      </View>
 )
 
 const styles = StyleSheet.create({
     container:{
         padding: 20, 
-        paddingBottom: 5, 
-        paddingTop: 5
+        paddingVertical: 5
     },
-    strong:{
-        color: '#09f',
-        fontWeight: 'bold', 
-        marginBottom: 5
+    language:{
+        padding:4,
+        color: theme.colors.white,
+        backgroundColor: theme.colors.primary,
+        alignSelf: 'flex-start',
+        borderRadius: 4,
+        overflow: 'hidden',
+        marginVertical:4
+    },
+    image : {
+        width:48,
+        height:48,
+        borderRadius: 4
     }
 })
 
