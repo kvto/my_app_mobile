@@ -32,14 +32,14 @@ const AppBarTab = ({ children, to}) =>{
         styles.text,
         active && styles.active
     ]
-    return
+    return(
         <>
         <Link to={to} component={TouchableWithoutFeedback}>
         <StyledText fontWeight='bold' style={textStyles}>
             {children}
         </StyledText>
         </Link>
-        </>
+        </>)
 }
 const AppBar = () => {
 return(

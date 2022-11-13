@@ -18,7 +18,7 @@ const RepositoryStats = props =>{
         </View>
         <View>
             <StyledText align='center' fontWeight='bold'>{parseThousands(props.forksCount)}</StyledText>
-            <StyledText textAlignCenter='center' >Forks</StyledText>
+            <StyledText textAlignCenter='center' >Views Prom</StyledText>
         </View>
         <View>
             <StyledText align='center' fontWeight='bold'>{props.reviewCount}</StyledText>
