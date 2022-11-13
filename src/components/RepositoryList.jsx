@@ -4,7 +4,7 @@ import repositories from '../data/repositories';
 import RepositoryItem from './RepositoryItem';
 
 const RepositoryList = () =>{
-    const [repositories, setRepositories] = useState([])
+
     
     return(
         <FlatList 

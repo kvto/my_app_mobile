@@ -4,7 +4,7 @@ import StyledText from './StyledText.jsx'
 import Constants from 'expo-constants'
 import theme from '../theme.js'
 import { Link, useLocation } from 'react-router-native'
-import { TouchableNativeFeedback } from 'react-native-web'
+
 
 const styles = StyleSheet.create({
     container: {
@@ -32,14 +32,14 @@ const AppBarTab = ({ children, to}) =>{
         styles.text,
         active && styles.active
     ]
-    
-    return(
+    return
+        <>
         <Link to={to} component={TouchableWithoutFeedback}>
         <StyledText fontWeight='bold' style={textStyles}>
             {children}
         </StyledText>
         </Link>
-    )
+        </>
 }
 const AppBar = () => {
 return(

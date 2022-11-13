@@ -1,57 +1,68 @@
 export default [
     {
-      id: 'midudev.midu.dev',
-      fullName: 'midudev/midu.dev',
-      description: 'Blog de noticias sobre desarrollo',
-      language: 'HTML',
+      id: 'FMS.ESPAÑ',
+      fullName: 'FMS (España)',
+      description: 'Freestyle Master Series (España)',
+      language: 'ESP',
       forksCount: 3123,
       stargazersCount: 52869,
       ratingAverage: 0,
       reviewCount: 0,
-      ownerAvatarUrl: 'https://avatars.githubusercontent.com/u/1561955?v=4'
+      ownerAvatarUrl: 'https://w0.peakpx.com/wallpaper/594/686/HD-wallpaper-fms-espana-juegos-logo.jpg'
     },
     {
-      id: 'jaredpalmer.formik',
-      fullName: 'jaredpalmer/formik',
-      description: 'Build forms in React, without the tears',
+      id: 'FMS.ARGE',
+      fullName: 'FMS (Argentina)',
+      description: 'Freestyle Master Series (Argentina)',
       language: 'TypeScript',
       forksCount: 1589,
       stargazersCount: 21553,
       ratingAverage: 88,
       reviewCount: 4,
-      ownerAvatarUrl: 'https://avatars2.githubusercontent.com/u/4060187?v=4'
+      ownerAvatarUrl: 'https://w0.peakpx.com/wallpaper/547/667/HD-wallpaper-fms-argentina-juegos-logo-thumbnail.jpg'
     },
     {
-      id: 'rails.rails',
-      fullName: 'rails/rails',
-      description: 'Ruby on Rails',
+      id: 'FMS.PERU',
+      fullName: 'FMS (Peru)',
+      description: 'Freestyle Master Series (Peru)',
       language: 'Ruby',
       forksCount: 18349,
       stargazersCount: 45377,
       ratingAverage: 100,
       reviewCount: 2,
-      ownerAvatarUrl: 'https://avatars1.githubusercontent.com/u/4223?v=4'
+      ownerAvatarUrl: 'https://w0.peakpx.com/wallpaper/53/302/HD-wallpaper-fms-peru-juegos-logo-thumbnail.jpg'
     },
     {
-      id: 'django.django',
-      fullName: 'django/django',
-      description: 'The Web framework for perfectionists with deadlines.',
+      id: 'FMS.CHIL',
+      fullName: 'FMS (Chile)',
+      description: 'Freestyle Master Series (Chile)',
       language: 'Python',
       forksCount: 21015,
       stargazersCount: 48496,
       ratingAverage: 73,
       reviewCount: 5,
-      ownerAvatarUrl: 'https://avatars2.githubusercontent.com/u/27804?v=4'
+      ownerAvatarUrl: 'https://w0.peakpx.com/wallpaper/1024/906/HD-wallpaper-fms-chile-juegos-logo-thumbnail.jpg'
     },
     {
-      id: 'reduxjs.redux',
-      fullName: 'reduxjs/redux',
-      description: 'Predictable state container for JavaScript apps',
+      id: 'FMS.COLO',
+      fullName: 'FMS (Colombia)',
+      description: 'Freestyle Master Series (Colombia)',
       language: 'TypeScript',
       forksCount: 13902,
       stargazersCount: 52869,
       ratingAverage: 0,
       reviewCount: 0,
-      ownerAvatarUrl: 'https://avatars3.githubusercontent.com/u/13142323?v=4'
+      ownerAvatarUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6O_OJALjk9vtBuvBvqjEI5xDNUZB6HDOxn0C-cw71LA&s'
+    },
+    {
+      id: 'FMS.INTER',
+      fullName: 'FMS(Internacional)',
+      description: 'Freestyle Master Series (Internacional)',
+      language: 'TypeScript',
+      forksCount: 13902,
+      stargazersCount: 52869,
+      ratingAverage: 0,
+      reviewCount: 0,
+      ownerAvatarUrl: 'https://i0.wp.com/urbanroosters.news/wp-content/uploads/2021/07/inter2021-1.png?resize=518%2C378&ssl=1'
     }
   ]
