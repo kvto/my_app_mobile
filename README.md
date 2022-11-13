@@ -1,3 +1,12 @@
+# Welcome to the Freestyle Masters Series (FMS) Mobile App 🎭🎼
+An application whose purpose is to show all the participants of the different Spanish-speaking freestyle leagues, as well as important data, such as their views, ratings, etc.
+
+# Steps to run the project 🚨:
+<p align="center">
+  <img height="500"src="src/img/1.png" />
+  <img height="500" src="src/img/2.png" />
+</p>
+
 ## More info about me: 
 <div id="badges" >
 Ing. Kevin J. Montero Zea 
